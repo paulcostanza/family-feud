@@ -20,3 +20,11 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
+#show-buttons {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: solid 2px black;
+  margin: 10px;
+}

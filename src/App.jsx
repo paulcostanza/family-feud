@@ -1,15 +1,16 @@
 // import { useState } from 'react'
 import './App.css'
-import Show from './sections/Show'
-import Steve from './sections/Steve'
-import Crowd from './sections/Crowd'
-import Other from './sections/Other'
+import Show from './sections/Show/Show'
+import Steve from './sections/Steve/Steve'
+import Crowd from './sections/Crowd/Crowd'
+import Other from './sections/Other/Other'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
+      <h1>Family Feud Soundboard</h1>
       <Show />
       <Steve />
       <Crowd />
@@ -19,3 +20,8 @@ function App() {
 }
 
 export default App
+
+// Features to add:
+
+// Continuous scroll
+// try speed tips from chat
