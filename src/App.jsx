@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
+import Header from './sections/Header/Header'
 import Show from './sections/Show/Show'
 import Steve from './sections/Steve/Steve'
 import Crowd from './sections/Crowd/Crowd'
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>Family Feud Soundboard</h1>
+      <Header />
       <Show />
       <Steve />
       <Crowd />

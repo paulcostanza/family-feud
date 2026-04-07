@@ -11,7 +11,9 @@ export default function Other() {
     return (
         <div className="container">
             <h2>Other</h2>
-            <button onTouchStart={() => handleClick(nakedGrandma)}>Naked Grandma!</button>
+            <div className="btns">
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(nakedGrandma)}>Naked Grandma!</button>
+            </div>
         </div>
     )
 }

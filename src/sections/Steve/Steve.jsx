@@ -17,11 +17,12 @@ export default function Steve() {
     return (
         <div className="container">
             <h2>Steve</h2>
-            <button onTouchStart={() => handleClick(uhHuh)}>Uh Huh</button>
-            <button onTouchStart={() => handleClick(thatShouldBe)}>That Should Be</button>
-            <button onTouchStart={() => handleClick(lordHaveMercy)}>Lord Have Mercy</button>
-            <button onTouchStart={() => handleClick(hellNo)}>Hell No</button>
-
+            <div className="btns">
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(uhHuh)}>Uh Huh</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(thatShouldBe)}>That Should Be</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(lordHaveMercy)}>Lord Have Mercy</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(hellNo)}>Hell No</button>
+            </div>
         </div>
     )
 }

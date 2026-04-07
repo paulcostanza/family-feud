@@ -25,13 +25,16 @@ export default function Crowd() {
     return (
         <div className="container">
             <h2>Crowd</h2>
-            <button onTouchStart={() => handleClick(clap)}>Clap!</button>
-            <button onTouchStart={() => handleClick(cheering)}>Cheering!</button>
-            <button onTouchStart={() => handleClick(laughter)}>Laughter</button>
-            <button onTouchStart={() => handleClick(booing)}>Booing</button>
-            <button onTouchStart={() => handleClick(shocked)}>Shocked</button>
-            <button onTouchStart={() => handleClick(ooh)}>Ooh</button>
-            <button onTouchStart={() => handleClick(boo)}>Boo</button>
+            <div className="btns">
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(clap)}>Clap!</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(cheering)}>Cheering!</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(laughter)}>Laughter</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(booing)}>Booing</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(shocked)}>Shocked</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(ooh)}>Ooh</button>
+                <button type='button' className='btn btn-primary btn-lg btn3d' onClick={() => handleClick(boo)}>Boo</button>
+            </div>
+
 
         </div>
     )

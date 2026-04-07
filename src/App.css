@@ -1,30 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;700&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   margin: 0;
-
-  /* hides scroll bar if it is needed */
-  overflow: hidden;
-
-  /* display, flex-direction, and align-items center the project horizontally*/
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* justify-content and height center the project vertically */
   justify-content: center;
-  height: 100vh;
+  background: #445585;
+  background: linear-gradient(180deg, rgba(68, 85, 133, 1) 0%, rgba(66, 116, 215, 1) 14%, rgba(255, 255, 255, 1) 100%);
+  background-attachment: fixed;
 }
 
-#show-buttons {
-  width: 100px;
+h2 {
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 1px #445585;
+}
+
+button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.btn {
+  width: 40%;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.btn3d {
+  position: relative;
+  top: -16px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
   height: 100px;
-  background-color: pink;
-  border: solid 2px black;
-  margin: 10px;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+  outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+  top: 2px;
+}
+
+.btn3d.btn-primary {
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 18px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #4274D7;
+}
+
+.btn3d.btn-primary:active,
+.btn3d.btn-primary.active {
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color: #4274D7;
 }
